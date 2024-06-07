@@ -26,17 +26,19 @@
       "output": "static",
       "favicon": "./assets/images/favicon.png"
     },
-    "plugins": [
-      [
-        "expo-router",
-        "expo-camera",
-          {
-            "cameraPermission": "Allow $(OracLe) to access your camera",
-            "microphonePermission": "Allow $(OracLe) to access your microphone",
-            "recordAudioAndroid": true
-          }
-      ]
-    ],
+"plugins": [
+  [
+    "expo-router"
+  ],
+  [
+    "expo-camera",
+    {
+      "cameraPermission": "Allow $(OracLe) to access your camera",
+      "microphonePermission": "Allow $(OracLe) to access your microphone",
+      "recordAudioAndroid": true
+    }
+  ]
+],
     "experiments": {
       "typedRoutes": true
     }
